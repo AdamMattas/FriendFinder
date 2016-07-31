@@ -10,12 +10,12 @@ var friendArray = [
   {
     name: "Ahmed",
     photo: "afhaque89@gmail.com",
-    scores: "afhaque89"
+    scores: [ 3, 3, 1, 5, 4, 1, 1, 5, 5, 1 ]
   },
   {
     name: "Ohmed",
     photo: "afhaque89@gmail.com",
-    scores: "afhaque89"
+    scores: [ 1, 1, 3, 5, 5, 5, 1, 1, 2, 1 ]
   }
 ];
 

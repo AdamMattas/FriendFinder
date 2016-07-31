@@ -18,7 +18,6 @@ module.exports = function(app){
 
   app.get('/api/friends', function(req, res){
     console.log("working!!!");
-    // res.sendFile(path.join(__dirname + '/../data/friends.js'));
     res.json(friendData);
   });
 
@@ -27,7 +26,37 @@ module.exports = function(app){
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table 
     //if(friendData.length < 5 ){
+      var tempArray = [];
+      console.log(req.body);
+      for(var i = 0; i < req.body.scores.length; i++){
+        
+        
+        tempArray.push(parseInt(req.body.scores[i]));
+        //req.body.scores.shift([i]);
+        //req.body.scores = tempArray;
+        //console.log(req.body.scores);
+      }
+      req.body.scores = tempArray;
       friendData.push(req.body);
+      //console.log(friendData);
+      for(var i = 0; i < friendData.length; i++){
+        console.log(friendData[i].scores);
+        // var arr = friendData[i].scores;
+
+        // var result=[];
+        // for (var i=0,l=arr.length;i<l;i++) result.push(+arr[i]); // or parseInt(arr[i]) or Number(arr[i])
+        // // result[3] // 71
+        // // typeof(result[3]) // "number"
+
+        // var sum = result.reduce(add, 0);
+
+        // function add(a, b) {
+        //     return a + b;
+        // }
+
+        // console.log(sum); // 6
+
+      }
       res.json(true); // KEY LINE
     //}
 
