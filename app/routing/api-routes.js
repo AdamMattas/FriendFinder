@@ -29,18 +29,25 @@ module.exports = function(app){
       var tempArray = [];
       console.log(req.body);
       for(var i = 0; i < req.body.scores.length; i++){
-        
-        
+               
         tempArray.push(parseInt(req.body.scores[i]));
-        //req.body.scores.shift([i]);
-        //req.body.scores = tempArray;
-        //console.log(req.body.scores);
+
       }
+
       req.body.scores = tempArray;
-      friendData.push(req.body);
-      //console.log(friendData);
+      //friendData.push(req.body); uncomment and possibly move once working
+      var match;
       for(var i = 0; i < friendData.length; i++){
         console.log(friendData[i].scores);
+
+        //var array1 = [1,2,3,4];
+        var checkArray = friendData[i].scores;
+
+        var sum = tempArray.map(function (num, idx) {
+          return Math.abs(num - checkArray[idx]);
+        }); // [6,8,10,12]
+        console.log(friendData[i].name);
+        console.log(sum);
         // var arr = friendData[i].scores;
 
         // var result=[];
@@ -48,13 +55,13 @@ module.exports = function(app){
         // // result[3] // 71
         // // typeof(result[3]) // "number"
 
-        // var sum = result.reduce(add, 0);
+        var absoluteSum = sum.reduce(add, 0);
 
-        // function add(a, b) {
-        //     return a + b;
-        // }
+        function add(a, b) {
+            return a + b;
+        }
 
-        // console.log(sum); // 6
+        console.log(absoluteSum); // 6
 
       }
       res.json(true); // KEY LINE
