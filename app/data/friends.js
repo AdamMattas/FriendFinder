@@ -9,13 +9,18 @@
 var friendArray = [
   {
     name: "Ahmed",
-    photo: "afhaque89@gmail.com",
-    scores: [ 3, 3, 1, 5, 4, 1, 1, 5, 5, 1 ]
+    photo: "http://cdn.techgyd.com/funny-profile-face-optical-illusion.jpg",
+    scores: [ 1, 1, 1, 1, 1, 1, 1, 1, 5, 5 ]
+  },
+  {
+    name: "Tron",
+    photo: "http://vignette4.wikia.nocookie.net/tron/images/0/0a/Tron_Uprising_Ep19_Tron02.5.png/revision/latest?cb=20130128210017",
+    scores: [ 3, 3, 3, 3, 3, 3, 3, 3, 5, 5 ]
   },
   {
     name: "Ohmed",
-    photo: "afhaque89@gmail.com",
-    scores: [ 1, 1, 3, 5, 5, 5, 1, 1, 2, 1 ]
+    photo: "http://3.bp.blogspot.com/-t1FSTujdXaY/UXVgmLDfnnI/AAAAAAAAHGo/O2_H-FxvBG8/s1600/923392_445950122152861_1377614217_n.jpg",
+    scores: [ 5, 5, 5, 5, 5, 5, 5, 5, 1, 1 ]
   }
 ];
 

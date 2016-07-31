@@ -35,36 +35,41 @@ module.exports = function(app){
       }
 
       req.body.scores = tempArray;
-      //friendData.push(req.body); uncomment and possibly move once working
-      var match;
+
+      var match = {
+        name: "", 
+        photo: "",
+        total: 50
+      };
+
       for(var i = 0; i < friendData.length; i++){
         console.log(friendData[i].scores);
 
-        //var array1 = [1,2,3,4];
         var checkArray = friendData[i].scores;
 
         var sum = tempArray.map(function (num, idx) {
           return Math.abs(num - checkArray[idx]);
-        }); // [6,8,10,12]
+        });
         console.log(friendData[i].name);
         console.log(sum);
-        // var arr = friendData[i].scores;
-
-        // var result=[];
-        // for (var i=0,l=arr.length;i<l;i++) result.push(+arr[i]); // or parseInt(arr[i]) or Number(arr[i])
-        // // result[3] // 71
-        // // typeof(result[3]) // "number"
 
         var absoluteSum = sum.reduce(add, 0);
 
         function add(a, b) {
-            return a + b;
+          return a + b;
         }
 
-        console.log(absoluteSum); // 6
+        console.log(absoluteSum);
+
+        if(absoluteSum <= match.total){
+          match.name = friendData[i].name;
+          match.photo = friendData[i].photo;
+          match.total = absoluteSum;
+        }
+        console.log(match);
 
       }
-      res.json(true); // KEY LINE
+      res.json(match); // KEY LINE
     //}
 
     // Or false if they don't have a table
