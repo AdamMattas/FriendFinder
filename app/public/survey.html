@@ -5,41 +5,63 @@
   <title>Friend Finder Survey</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  <!-- Chosen -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
+  <style>
+    .friend-back{
+      width: 100%;
+      margin: 0 auto;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .big-button{
+      width: 100%;
+      height: 100px;
+      border-radius: 20px;
+      margin-top: 25px;
+    }
+    span.glyphicon {
+      font-size: 3.2em;
+      float: left;
+    }
+    .margin{
+      margin-top: 15px;
+    }
+    .survey{
+      width: 100%;
+      height: 45px;
+      border: 1px solid #000000;
+    }
+    .survey-input{
+      height: 45px;
+    }
+  </style>
 </head>
 <body>
   
   <div class="container">
-    <div class="jumbotron">
-      <h1>Friend Finder Survey</h1>
-      <h3>Put in some questions!</h3>
-      <hr>
-      <a href="/survey"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Take Survey</button></a>
-      <a href="/api/friends"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Api Friends List</button></a>
-    </div>
+    <img class="friend-back" src="http://i827.photobucket.com/albums/zz196/midwestarmor/hosting/friend-finder_zpsit0zsino.jpg">
+      <a href="/survey"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-pencil"></span> <h3>Take Survey</h3></button></a>
+      <a href="/api/friends"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-list-alt"></span> <h3>Api Friends List</h3></button></a>
 
     <div>
 
-      <label for="name">Your Name*</label>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon3">John Johnson</span>
-        <input type="text" class="form-control" id="name" aria-describedby="basic-addon3">
+      <label for="name" class="margin">Your Name*</label>
+      <div class="input-group survey">
+        <!-- <span class="input-group-addon" id="basic-addon3">John Johnson</span> -->
+        <input type="text" class="form-control survey-input" id="name" placeholder="Your Name Here">
       </div>
 
-      <label for="photo">Link to Photo Image*</label>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon3">https://example.com/image.jpg</span>
-        <input type="text" class="form-control" id="photo" aria-describedby="basic-addon3">
+      <label for="photo" class="margin">Link to Photo Image*</label>
+      <div class="input-group survey">
+        <input type="text" class="form-control survey-input" id="photo" placeholder="https://example.com/image.jpg">
       </div>
 
-      <h3><strong>Question 1</strong></h3>
+      <h3 class="margin"><strong>Opinion 1</strong></h3>
       <h4>Drive it like you stole it.</h4>
-      <select class="chosen-select" id="q1">
+      <select class="chosen-select survey" id="q1">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -48,9 +70,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 2</strong></h3>
+      <h3 class="margin"><strong>Opinion 2</strong></h3>
       <h4>Dance like nobody is watching.</h4>
-      <select class="chosen-select" id="q2">
+      <select class="chosen-select survey" id="q2">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -59,9 +81,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 3</strong></h3>
+      <h3 class="margin"><strong>Opinion 3</strong></h3>
       <h4>Google is better than Bing.</h4>
-      <select class="chosen-select" id="q3">
+      <select class="chosen-select survey" id="q3">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -70,9 +92,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 4</strong></h3>
+      <h3 class="margin"><strong>Opinion 4</strong></h3>
       <h4>Never judge a book by its cover.</h4>
-      <select class="chosen-select" id="q4">
+      <select class="chosen-select survey" id="q4">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -81,9 +103,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 5</strong></h3>
+      <h3 class="margin"><strong>Opinion 5</strong></h3>
       <h4>10 years from now Facebook will still exist and people will still post pictures of their dinner on it.</h4>
-      <select class="chosen-select" id="q5">
+      <select class="chosen-select survey" id="q5">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -92,9 +114,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 6</strong></h3>
+      <h3 class="margin"><strong>Opinion 6</strong></h3>
       <h4>Money can't buy happiness.</h4>
-      <select class="chosen-select" id="q6">
+      <select class="chosen-select survey" id="q6">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -103,9 +125,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 7</strong></h3>
+      <h3 class="margin"><strong>Opinion 7</strong></h3>
       <h4>The government is hiding the truth about extra terrestrials.</h4>
-      <select class="chosen-select" id="q7">
+      <select class="chosen-select survey" id="q7">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -114,9 +136,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 8</strong></h3>
+      <h3 class="margin"><strong>Opinion 8</strong></h3>
       <h4>Back to the Future 1, 2 and 3 are all excellent movies.</h4>
-      <select class="chosen-select" id="q8">
+      <select class="chosen-select survey" id="q8">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -125,9 +147,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 9</strong></h3>
+      <h3 class="margin"><strong>Opinion 9</strong></h3>
       <h4>Daniel Tosh will burn in hell.</h4>
-      <select class="chosen-select" id="q9">
+      <select class="chosen-select survey" id="q9">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -136,9 +158,9 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 10</strong></h3>
+      <h3 class="margin"><strong>Opinion 10</strong></h3>
       <h4>Are you ready to rock?</h4>
-      <select class="chosen-select" id="q10">
+      <select class="chosen-select survey" id="q10">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -148,7 +170,7 @@
       </select>
 
       <!-- Submit Button -->
-      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+      <button type="submit" class="btn btn-primary btn-lg btn-block margin" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
 
     </div>
 

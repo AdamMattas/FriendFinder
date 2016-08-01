@@ -8,17 +8,37 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+  <style>
+    .friend-back{
+      width: 100%;
+      margin: 0 auto;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .big-button{
+      width: 100%;
+      height: 100px;
+      border-radius: 20px;
+      margin-top: 25px;
+    }
+    span.glyphicon {
+      font-size: 3.2em;
+      float: left;
+    }
+  </style>
+
 </head>
 <body>
   
   <div class="container">
-    <div class="jumbotron">
-      <h1>Friend Finder</h1>
+    <!-- <div class="jumbotron friend-back"> -->
+      <!-- <h1>Friend Finder</h1>
       <h3>Find some friends!</h3>
-      <hr>
-      <a href="/survey"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-pencil"></span> Take Survey</button></a>
-      <a href="/add"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-list-alt"></span> Api Friends List</button></a>
-    </div>
+      <hr> -->
+      <img class="friend-back" src="http://i827.photobucket.com/albums/zz196/midwestarmor/hosting/friend-finder_zpsit0zsino.jpg">
+      <a href="/survey"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-pencil"></span> <h3>Take Survey</h3></button></a>
+      <a href="/api/friends"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-list-alt"></span> <h3>Api Friends List</h3></button></a>
+    <!-- </div> -->
   </div>
 
 </body>
