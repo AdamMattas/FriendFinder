@@ -9,8 +9,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
   <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
 </head>
 <body>
   
@@ -38,8 +38,8 @@
       </div>
 
       <h3><strong>Question 1</strong></h3>
-      <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <select data-placeholder="" class="chosen-select" id="q1">
+      <h4>Drive it like you stole it.</h4>
+      <select class="chosen-select" id="q1">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -49,8 +49,8 @@
       </select>
 
       <h3><strong>Question 2</strong></h3>
-      <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-      <select data-placeholder="" class="chosen-select" id="q2">
+      <h4>Dance like nobody is watching.</h4>
+      <select class="chosen-select" id="q2">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -60,8 +60,8 @@
       </select>
 
       <h3><strong>Question 3</strong></h3>
-      <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-      <select data-placeholder="" class="chosen-select" id="q3">
+      <h4>Google is better than Bing.</h4>
+      <select class="chosen-select" id="q3">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -71,8 +71,8 @@
       </select>
 
       <h3><strong>Question 4</strong></h3>
-      <h4>You rarely do something just out of sheer curiosity.</h4>
-      <select data-placeholder="" class="chosen-select" id="q4">
+      <h4>Never judge a book by its cover.</h4>
+      <select class="chosen-select" id="q4">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -82,8 +82,8 @@
       </select>
 
       <h3><strong>Question 5</strong></h3>
-      <h4>People can rarely upset you.</h4>
-      <select data-placeholder="" class="chosen-select" id="q5">
+      <h4>10 years from now Facebook will still exist and people will still post pictures of their dinner on it.</h4>
+      <select class="chosen-select" id="q5">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -93,8 +93,8 @@
       </select>
 
       <h3><strong>Question 6</strong></h3>
-      <h4>It is often difficult for you to relate to other people’s feelings.</h4>
-      <select data-placeholder="" class="chosen-select" id="q6">
+      <h4>Money can't buy happiness.</h4>
+      <select class="chosen-select" id="q6">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -104,8 +104,8 @@
       </select>
 
       <h3><strong>Question 7</strong></h3>
-      <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-      <select data-placeholder="" class="chosen-select" id="q7">
+      <h4>The government is hiding the truth about extra terrestrials.</h4>
+      <select class="chosen-select" id="q7">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -115,8 +115,8 @@
       </select>
 
       <h3><strong>Question 8</strong></h3>
-      <h4>You rarely get carried away by fantasies and ideas.</h4>
-      <select data-placeholder="" class="chosen-select" id="q8">
+      <h4>Back to the Future 1, 2 and 3 are all excellent movies.</h4>
+      <select class="chosen-select" id="q8">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -126,8 +126,8 @@
       </select>
 
       <h3><strong>Question 9</strong></h3>
-      <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-      <select data-placeholder="" class="chosen-select" id="q9">
+      <h4>Daniel Tosh will burn in hell.</h4>
+      <select class="chosen-select" id="q9">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -137,8 +137,8 @@
       </select>
 
       <h3><strong>Question 10</strong></h3>
-      <h4>You feel more energetic after spending time with a group of people.</h4>
-      <select data-placeholder="" class="chosen-select" id="q10">
+      <h4>Are you ready to rock?</h4>
+      <select class="chosen-select" id="q10">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
@@ -179,16 +179,16 @@
   <script type="text/javascript">
 
     // Chosen CSS
-    var config = {
-      '.chosen-select'           : {},
-      '.chosen-select-deselect'  : {allow_single_deselect:true},
-      '.chosen-select-no-single' : {disable_search_threshold:10},
-      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-      '.chosen-select-width'     : {width:"95%"}
-    }
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
+    // var config = {
+    //   '.chosen-select'           : {},
+    //   '.chosen-select-deselect'  : {allow_single_deselect:true},
+    //   '.chosen-select-no-single' : {disable_search_threshold:10},
+    //   '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+    //   '.chosen-select-width'     : {width:"95%"}
+    // }
+    // for (var selector in config) {
+    //   $(selector).chosen(config[selector]);
+    // }
 
     // Capture the form inputs 
     $("#submit").on("click", function(){

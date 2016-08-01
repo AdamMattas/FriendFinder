@@ -8,19 +8,19 @@
 
 var friendArray = [
   {
-    name: "Ahmed",
-    photo: "http://cdn.techgyd.com/funny-profile-face-optical-illusion.jpg",
-    scores: [ 1, 1, 1, 1, 1, 1, 1, 1, 5, 5 ]
+    name: "Crystal Margaret",
+    photo: "https://pbs.twimg.com/profile_images/717885900970074112/8wqHbm7c.jpg",
+    scores: [ 5, 5, 1, 2, 5, 1, 5, 2, 5, 5 ]
   },
   {
-    name: "Tron",
-    photo: "http://vignette4.wikia.nocookie.net/tron/images/0/0a/Tron_Uprising_Ep19_Tron02.5.png/revision/latest?cb=20130128210017",
-    scores: [ 3, 3, 3, 3, 3, 3, 3, 3, 5, 5 ]
+    name: "Broy Edwards",
+    photo: "http://www.thepoke.co.uk/wp-content/uploads/2014/04/background-photo-7.png",
+    scores: [ 5, 4, 5, 1, 5, 1, 5, 1, 1, 5 ]
   },
   {
-    name: "Ohmed",
-    photo: "http://3.bp.blogspot.com/-t1FSTujdXaY/UXVgmLDfnnI/AAAAAAAAHGo/O2_H-FxvBG8/s1600/923392_445950122152861_1377614217_n.jpg",
-    scores: [ 5, 5, 5, 5, 5, 5, 5, 5, 1, 1 ]
+    name: "Hugh Willis",
+    photo: "http://static.eharmony.com/dating-advice/wp-content/uploads/2013/06/onlinedatingprofilephotodont.jpg",
+    scores: [ 1, 1, 5, 3, 2, 3, 1, 5, 3, 2 ]
   }
 ];
 
