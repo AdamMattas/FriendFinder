@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+  <!-- begin style section -->
   <style>
     .friend-back{
       width: 100%;
@@ -26,20 +27,23 @@
       float: left;
     }
   </style>
+  <!-- end style section -->
 
 </head>
 <body>
   
+  <!-- begin container for all content -->
   <div class="container">
-    <!-- <div class="jumbotron friend-back"> -->
-      <!-- <h1>Friend Finder</h1>
-      <h3>Find some friends!</h3>
-      <hr> -->
-      <img class="friend-back" src="http://i827.photobucket.com/albums/zz196/midwestarmor/hosting/friend-finder_zpsit0zsino.jpg">
-      <a href="/survey"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-pencil"></span> <h3>Take Survey</h3></button></a>
-      <a href="/api/friends"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-list-alt"></span> <h3>Api Friends List</h3></button></a>
-    <!-- </div> -->
+
+    <!-- background image -->  
+    <img class="friend-back" src="http://i827.photobucket.com/albums/zz196/midwestarmor/hosting/friend-finder_zpsit0zsino.jpg">
+    <!-- button links to survey page -->
+    <a href="/survey"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-pencil"></span> <h3>Take Survey</h3></button></a>
+    <!-- button shows friends JSON data -->
+    <a href="/api/friends"><button type="button" class="btn btn-danger btn-lg big-button"><span class="glyphicon glyphicon-list-alt"></span> <h3>Api Friends List</h3></button></a>
+
   </div>
+  <!-- end container for all content -->
 
 </body>
 </html>
